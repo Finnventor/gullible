@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: monospace;
+}
+
+
+.loading_container {
+  width: 500px;
+}
+
+.loading_box {
+  width: 200px;
+  height: 20px;
+  border: 5px solid #666;
+  position: absolute;
+  top: 3px;
+  animation: bar 10s infinite;
+}
+
+.loading_bar {
+  z-index: -1;
+  width: 200px;
+  height: 20px;
+  background-color: #0e0;
+}
+
+@keyframes bar {
+  from {left: 207px;}
+  to {left: 10px;}
+}
+
+.spinner_container {
+  display: inline-block;
+}
+
+.spinner_text {
+  position: relative;
+  top: -25px;
+  left: 30px;
+  animation: spinning 1s infinite;
+  width: 50px;
+}
+
+@keyframes spinning {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.link_trick {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #666;
+}
